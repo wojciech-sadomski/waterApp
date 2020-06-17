@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://krzysztofgrudzien.github.io/hydrApp/# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HydrApp</title>
+    <meta name="description" content="The First very simple WEB application PWA contains how much you drink water every day.">
+    <meta property="og:title" content="HydrApp">
+    <meta property="og:description" content="The First very simple WEB application PWA contains how much you drink water every day.">
+    <meta property="og:url" content="https://github.com/KrzysztofGrudzien/hydrApp">
+    <meta property="og:image" content="https://krzysztofgrudzien.github.io/hydrApp/assets/img/hydrapp.jpg">
+    <link rel="manifest" href="https://krzysztofgrudzien.github.io/hydrApp/manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" sizes="192x192" href="https://krzysztofgrudzien.github.io/hydrApp/assets/pwa/icons/icon-192x192.png">
+    <link rel="icon" type="image/png" href="https://krzysztofgrudzien.github.io/hydrApp/assets/pwa/icons/icon-192x192.png">
+    <link rel="stylesheet" href="./glass_add_files/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__logo"><img class="header__logo-img" src="./glass_add_files/logo.svg" alt="logo application."></h1>
+        <div class="header__nav-switcher-box header__nav-switcher-box--js">
+            <div class="header__nav-switcher--js header__nav-switcher" style=""></div>
+        </div>
+    </header>
+    <nav class="nav nav--js nav--animation-left">
+        <header class="nav__header">
+            <img class="nav__header-img" src="./glass_add_files/drops.svg" alt="cartoon drops.">
+            <p class="nav__header-summary nav__header-summary--js">600ML / 2800ML</p>
+            <div class="nav__header-summary-progress">
+                <div class="nav__header-progress-bar nav__header-progress-bar--js" style="width: 22%;"></div>
+            </div>
+        </header>
+        <div class="nav__content">
+            <ul class="nav__list nav__list--js">
+                <li class="nav__list-item nav__list-item-statistic--js"><img class="nav__icon" src="./glass_add_files/statistics.svg" alt="statistics icon."><a href="https://krzysztofgrudzien.github.io/hydrApp/#" class="nav__list-link">Statistics</a></li>
+                <li class="nav__list-item nav__list-item-achievement--js"><img class="nav__icon" src="./glass_add_files/achievements.svg" alt="achievements icon."><a href="https://krzysztofgrudzien.github.io/hydrApp/#" class="nav__list-link">Achievements</a></li>
+                <li class="nav__list-item nav__list-item-contact--js"><img class="nav__icon nav__icon--contact" src="./glass_add_files/contact.svg" alt="contact icon."><a href="https://krzysztofgrudzien.github.io/hydrApp/#" class="nav__list-link nav__list-link-contact">Contact with
+                        me</a></li>
+                <li class="nav__list-item nav__list-item-settings--js"><img class="nav__icon" src="./glass_add_files/settings.svg" alt="settings icon."><a href="https://krzysztofgrudzien.github.io/hydrApp/#" class="nav__list-link">Settings</a></li>
+            </ul>
+        </div>
+        <section class="statistics statistics--js" hidden="">
+            <h2 class="statistics__header">
+                <span class="statistics__header-title">statistics</span>
+                <span class="statistics__switcher-box statistics__switcher-box--js">
+                    <span class="statistics__switcher statistics__switcher--js"></span>
+                </span>
+            </h2>
+            <div class="statistics__box">
+                <img class="statistics__icon" src="./glass_add_files/statistics.svg" alt="statistics of drinking water.">
+                <div class="statistics__table statistics__table--js">
+                    <table class="table">
+                        <thead class="table__header" hidden="">
+                            <tr class="table__row">
+                                <th class="table__row-header">Current statistics</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table__body table__body--js">
+                            <tr class="table__row">
+                                <th class="table__row-head">Date</th>
+                                <th class="table__row-head">Amount</th>
+                            </tr>
+                        
+            <tr class="table__data-header">
+                <td class="table__data table__data-key--js">2020-06-16</td>
+                <td class="table__data table__data-value table__data-value--js">0</td>
+            </tr>
+            
+            <tr class="table__data-header">
+                <td class="table__data table__data-key--js">2020-06-17</td>
+                <td class="table__data table__data-value table__data-value--js">0</td>
+            </tr>
+            </tbody>
+                        <tfoot class="table__footer">
+                            <tr class="table__row">
+                                <th class="table__row-head">Total of drank glasses</th>
+                                <td class="table__data-summary table__data-summary table__data-summary--js">0</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+            <div class="statistics__averages">
+                <div class="statistics__average">
+                    <p class="statistics__volume">Average volume</p>
+                    <span class="statistics__volume-value statistics__volume-value--js">600ML / DAY</span>
+                </div>
+                <div class="statistics__average">
+                    <p class="statistics__complation">Average complation</p>
+                    <span class="statistics__complation-value statistics__complation-value--js">22%</span>
+                </div>
+                <div class="statistics__average">
+                    <p class="statistics__frequency">Drink frequency</p>
+                    <span class="statistics__frequency-value statistics__frequency-value--js">3 / DAY</span>
+                </div>
+            </div>
+        </section>
+        <section class="achievements achievements--js nav--animation-left">
+            <h2 class="achievements__header">
+                <span class="achievements__header-title">achievements</span>
+                <span class="achievements__switcher-box achievements__switcher-box--js">
+                    <span class="achievements__switcher achievements__switcher--js"></span>
+                </span>
+            </h2>
+            <div class="achievements__box">
+                <img class="achievements__icon" src="./glass_add_files/achievements.svg" alt="achievements of drinking water.">
+                <div class="achievements__table">
+                    <div class="achievements__box-achievements">
+                        <div class="achievements__box-percent">
+                            <div class="achievements__box-percent-100">100%</div>
+                            <div class="achievements__box-percent-80">80%</div>
+                            <div class="achievements__box-percent-60">60%</div>
+                            <div class="achievements__box-percent-40">40%</div>
+                            <div class="achievements__box-percent-20">20%</div>
+                            <div class="achievements__box-percent-0">0%</div>
+                        </div>
+                        <div class="achievements__box-progress-bar">
+                            <div class="achievements__progress-bar achievements__progress-bar--js" style="height: 22%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="achievements__goals">
+                <div class="achievements__goal">
+                    <p class="achievements__volume">Your goal</p>
+                    <span class="achievements__value achievements__value--js">2800ML</span>
+                </div>
+            </div>
+        </section>
+        <section class="contact contact--js" hidden="">
+            <h2 class="contact__header">
+                <span class="contact__header-title">contact</span>
+                <span class="contact__switcher-box contact__switcher-box--js">
+                    <span class="contact__switcher contact__switcher--js"></span>
+                </span>
+            </h2>
+            <section class="contact__author">
+                <img class="contact__author-img" src="./glass_add_files/author.png" alt="author of hydrApp application.">
+                <h2 class="contact__author-name">krzysztof grudzień</h2>
+                <span class="contact__author-profession">junior front-end developer</span>
+            </section>
+            <div class="contact__details">
+                <div class="contact__details-email">
+                    <img class="contact__details-email-icon" src="./glass_add_files/contact.svg" alt="email contact with the author.">
+                    <p class="contact__email">krzysztof.grudzien.fed@gmail.com</p>
+                </div>
+                <div class="contact__details-phone">
+                    <img class="contact__details-phone-icon" src="./glass_add_files/phone.svg" alt="phone contact with the author.">
+                    <p class="contact__phone">797-457-237, 667-664-336</p>
+                </div>
+                <div class="contact__details-www">
+                    <img class="contact__details-www-icon" src="./glass_add_files/www.svg" alt="website contact with the author.">
+                    <p class="contact__www"><a class="contact__www-link" href="http://www.criscode.pl/" target="_blank">http://www.criscode.pl</a></p>
+                </div>
+            </div>
+            <section class="contact__social contact__social">
+                <h2 class="contact__social-header">I'm here:</h2>
+                <ul class="contact__social-list">
+                    <li class="contact__social-item"><a class="contact__social-link" href="https://github.com/KrzysztofGrudzien" target="_blank"><img src="./glass_add_files/github.svg"></a></li>
+                    <li class="contact__social-item"><a class="contact__social-link" href="https://www.linkedin.com/in/criscode/" target="_blank"><img src="./glass_add_files/linkedin.svg"></a></li>
+                    <li class="contact__social-item"><a class="contact__social-link" href="https://www.facebook.com/criscodepl/" target="_blank"><img src="./glass_add_files/facebook.svg"></a></li>
+                </ul>
+            </section>
+        </section>
+        <section class="settings settings--js nav--animation-left">
+            <h2 class="settings__header">
+                <span class="settings__header-title">settings</span>
+                <span class="settings__switcher-box settings__switcher-box--js">
+                    <span class="settings__switcher settings__switcher--js"></span>
+                </span>
+            </h2>
+            <div class="settings__box">
+                <img class="settings__icon" src="./glass_add_files/settings.svg" alt="settings of drinking water.">
+                <section class="settings__units">
+                    <img src="./glass_add_files/lurel.svg" alt="lurel icon.">
+                    <h2 class="settings__units-header"><span class="statistics__units-header-title">Units</span>
+                        <span class="settings__units-header-description">Currently in use ml/glass</span>
+                    </h2>
+                    <p class="settings__unit">200</p>
+                </section>
+                <div class="settings__avarage-amounts">
+                    <img src="./glass_add_files/glass-full-grey.svg" alt="lurel icon.">
+                    <h2 class="settings__avarage-amount-header"><span class="settings__avarage-amount-header-title">Averge amount</span>
+                        <span class="settings__avarage-amount-header-description">Currently in use
+                            cm<sup>3</sup></span>
+                    </h2>
+                    <p class="settings__avarage-amount">2800</p>
+                </div>
+            </div>
+        </section>
+    </nav>
+    <main class="main">
+        <div class="app">
+            <div class="app__content">
+                <div class="app__heart-box">
+                    <div class="app__heart app__heart--js" style="animation-duration: 1.2s;"></div>
+                </div>
+                <button class="btn btn--add btn--add-js"></button>
+                <button class="btn btn--substract btn--substract-js"></button>
+                <div class="app__percent app__percent--js">22%</div>
+                <img src="./glass_add_files/drop.svg" alt="picture of drop.">
+            </div>
+            <div class="app__loader app__loader--js" style="display: none;">
+                <p class=" app__loader-message">loading</p>
+                <div class="app__loader-box">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <section class="app__glasses app__glasses--js">
+                <h2 class="app__header-counter app__header-counter--js">3</h2>
+                <p class="app__glass-dimention">200ML Glass</p>
+            </section>
+        </div>
+    </main>
+    <script src="./glass_add_files/main.js.pobrane"></script>
+
+
+</body></html>
