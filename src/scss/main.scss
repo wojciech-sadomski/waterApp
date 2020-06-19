@@ -4,7 +4,8 @@
 body {
   // display: grid;
   background-color: #8edfdf;
-  background-image: none;
+  background-image: var(--drops);
+
   position: relative;
 }
 .grid {
