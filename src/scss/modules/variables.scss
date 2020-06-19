@@ -1,3 +1,5 @@
 :root {
-  --drops: url(../assets/img/drops.svg);
+  --active: url(../assets/img/drops.svg);
+  --pasiv: none;
+  --drops: --active;
 }

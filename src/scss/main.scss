@@ -4,7 +4,7 @@
 body {
   // display: grid;
   background-color: #8edfdf;
-  background-image: var(--drops);
+  background-image: none;
   position: relative;
 }
 .grid {
@@ -48,6 +48,11 @@ body {
     margin-bottom: 40px;
   }
 }
+@media screen and (min-width: 500px) {
+  .list {
+    margin-left: 100px;
+  }
+}
 .footer {
   display: flex;
   color: #66d5dc;
@@ -88,7 +93,9 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+
   &--style {
+    position: relative;
     width: 110px;
     height: 110px;
     background: no-repeat;
@@ -96,6 +103,12 @@ body {
     background-image: url(../assets/img/add_button.svg);
     background-position: center center;
     background-repeat: no-repeat;
+    color: #367488;
+    font-size: 30px;
+    &--text {
+      position: relative;
+      bottom: 30px;
+    }
   }
 }
 .btnRemove {

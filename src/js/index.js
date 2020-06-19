@@ -1,32 +1,26 @@
 import "../scss/main.scss";
 
 // uncomment the lines below to enable PWA
-// import {registerSW} from './pwa.js';
-// registerSW();
+import { registerSW } from "./pwa.js";
+registerSW();
 
 /* place your code below */
 const btnAdd = document.querySelector(".btnAdd--style--js");
 const btnRemove = document.querySelector(".btnRemove--style--js");
 const demand = document.querySelector(".statistic__text--js");
+const key = new Date().toISOString().slice(0, 10);
 
+let glassesSaved = localStorage.getItem("glassesDrinked");
 let glassesNeed = 8;
-const glassesSaved = localStorage.getItem("glassesDrinked");
-let glassesDrinked = 8;
-let glassesDemand = glassesNeed - glassesDrinked;
-
-if (glassesSaved) {
-  if (glassesDemand <= glassesSaved) {
-    glassesDrinked = glassesSaved;
-    demand.innerHTML = `${glassesDrinked}`;
-  } else {
-    glassesDrinked = glassesNeed;
-    demand.innerHTML = `${glassesDemand}`;
-  }
+let glassesDrinked = 0;
+if (!glassesSaved) {
+  glassesDrinked = glassesSaved;
+  demand.innerHTML = `${glassesNeed - glassesDrinked}`;
 } else {
-  glassesDrinked = 0;
-  demand.innerHTML = `${glassesDemand}`;
+  demand.innerHTML = `${glassesNeed - glassesDrinked}`;
 }
 const addGlass = function () {
+  console.log(glassesDrinked);
   glassesDrinked++;
   localStorage.setItem("glassesDrinked", glassesDrinked);
   demand.innerHTML = `${glassesNeed - glassesDrinked}`;
