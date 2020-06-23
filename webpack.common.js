@@ -59,6 +59,7 @@ module.exports = {
 
   devServer: {
     port: 8080,
+    host: "0.0.0.0",
   },
 
   plugins: [
@@ -67,9 +68,7 @@ module.exports = {
         {
           from: "public",
           globOptions: {
-            ignore: [
-              '**/*.DS_Store'
-            ],
+            ignore: ["**/*.DS_Store"],
           },
         },
       ],
@@ -85,7 +84,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/pages/another.html",
       inject: true,
-      chunks: ["index", "another"],
+      chunks: ["another"],
       filename: "another.html",
     }),
   ],

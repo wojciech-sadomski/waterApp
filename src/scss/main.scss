@@ -5,14 +5,27 @@ body {
   // display: grid;
   background-color: #8edfdf;
   background-image: var(--drops);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80vh;
 
   position: relative;
+}
+.another__header {
+  text-align: center;
+  color: red;
+  margin-top: 50px;
+}
+.back {
+  display: block;
+  margin: 20px;
 }
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 134px 1fr 1fr;
 }
+
 .header {
   grid-column-start: 1;
   grid-column-end: 4;
@@ -48,6 +61,9 @@ body {
     color: #338a70;
     margin-bottom: 40px;
   }
+}
+.link__hide {
+  text-decoration: none;
 }
 @media screen and (min-width: 500px) {
   .list {

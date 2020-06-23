@@ -1,5 +1,3 @@
-
-
 # Aplikacja nawadniająca
 
 Apka która pomoże w odpowiednim nawodnieniu organizmu
@@ -9,6 +7,4 @@ Apka która pomoże w odpowiednim nawodnieniu organizmu
 1. Stworzenie projektu za pomocą programu Figma
 2. Utworzenie nowego projetku
 3. Code..
-
-
-
+4. Zwiększanie ilości funkcji.
