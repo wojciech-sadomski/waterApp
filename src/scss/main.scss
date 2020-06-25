@@ -1,24 +1,59 @@
 @import "~normalize.css";
 @import "modules/variables.scss";
-
+@keyframes rain {
+  0% {
+    transform: translate(0px, 0);
+  }
+  100% {
+    transform: translate(0px, 200px);
+  }
+}
+.rain {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 100vh;
+  background-image: var(--drops);
+  animation: rain var(--colapse) linear infinite;
+  z-index: -1;
+}
 body {
   // display: grid;
   background-color: #8edfdf;
-  background-image: var(--drops);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 80vh;
+
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: 80vh;
 
   position: relative;
 }
-.another__header {
-  text-align: center;
-  color: red;
-  margin-top: 50px;
-}
-.back {
-  display: block;
-  margin: 20px;
+.nuke {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+
+  &__animation {
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    align-items: flex-end;
+    transform: scale(1.4);
+    transform-origin: bottom center;
+    transition: transform 1s cubic-bezier(0.39, 0.23, 1, 0.21);
+  }
+  &__header {
+    text-align: center;
+    color: red;
+    margin-top: 10px;
+    margin-bottom: 120px;
+  }
+  &__back {
+    display: block;
+    margin: 20px;
+  }
+  &__nuke {
+    fill: seagreen;
+  }
 }
 .grid {
   display: grid;
@@ -64,6 +99,7 @@ body {
 }
 .link__hide {
   text-decoration: none;
+  color: #338a70;
 }
 @media screen and (min-width: 500px) {
   .list {

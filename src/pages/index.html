@@ -23,7 +23,7 @@
     <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
     <meta
       property="og:image"
-      content="https://wojciech-sadomski.github.io/waterApp/"
+      content="https://wojciech-sadomski.github.io/waterApp/image.png"
     />
 
     <!-- uncomment the line below to enable PWA  -->
@@ -152,8 +152,10 @@
       media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
     />
   </head>
+
   <body>
     <main class="grid">
+      <div class="rain"></div>
       <header class="header">
         <h1 class="header__text">WatterApp</h1>
       </header>
@@ -175,6 +177,7 @@
                 class="list__active list__active--walking--js"
                 name="Walking"
                 type="checkbox"
+                value="true"
             /></label>
           </p>
           <p class="list__element">
@@ -183,14 +186,16 @@
                 class="list__active list__active--cycling--js"
                 name="Cycling"
                 type="checkbox"
+                value="true"
             /></label>
           </p>
           <p class="list__element">
             <label
               >Swimming<input
-                class="list__active list__active---swimming-js"
+                class="list__active list__active--swimming-js"
                 name="Swimming"
                 type="checkbox"
+                value="true"
             /></label>
           </p>
           <a class="link__hide" href="another.html">
@@ -200,8 +205,11 @@
                   class="list__active list__active--codeing--js"
                   name="Codeing"
                   type="checkbox"
-              /></label></p
-          ></a>
+                  value="true"
+                  onclick="window.location.href='another.html'"
+              /></label>
+            </p>
+          </a>
         </form>
       </section>
       <section class="statistic">
@@ -210,10 +218,13 @@
         <p class="statistic__text statistic__text--js"></p>
       </section>
       <section class="btnRemove">
-        <button class="btnRemove--style btnRemove--style--js"></button>
+        <button
+          class="btnRemove--style btnRemove--style--js"
+          name="remove button"
+        ></button>
       </section>
       <section class="btnAdd">
-        <button class="btnAdd--style btnAdd--style--js">
+        <button class="btnAdd--style btnAdd--style--js" name="add button">
           <div class="btnAdd--style--text">200ml</div>
         </button>
       </section>
